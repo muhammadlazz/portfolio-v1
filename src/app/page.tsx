@@ -1,6 +1,5 @@
 "use client";
 import Image from "next/image";
-import profilePic from './img/ppic.jpg'
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/hooks/use-outside-click";
@@ -13,11 +12,9 @@ import { cn } from "@/lib/utils";
 import { DirectionAwareHover } from "@/components/ui/direction-aware-hover";
 
 export function DirectionAwareHoverDemo() {
-  const imageUrl =
-    "https://cdn.discordapp.com/attachments/1076759628244844565/1275720644155281510/IMG_1729.jpg?ex=66c6eaef&is=66c5996f&hm=2cca21cde33d0bf7c3cb015156c51748bff719df057023e52137c399e3e81833&";
   return (
     <div className="h-[10rem] relative  flex items-center justify-center">
-      <DirectionAwareHover imageUrl={imageUrl}>
+      <DirectionAwareHover imageUrl={"/ppic.jpg"}>
         <p className="font-bold text-xl">Muhammad Lazuardi</p>
         <p className="font-normal text-sm">Teknik Telekomunikasi - 23</p>
         <p className="font-normal text-sm">Telkom University</p>
