@@ -254,7 +254,7 @@ const cards = [
     content: () => {
       return (
         <p>
-          Don't know, don't love. Get in touch with me.
+          Dont know, dont love. Get in touch with me.
         </p>
       );
     },
